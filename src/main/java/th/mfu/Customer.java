@@ -1,13 +1,14 @@
 package th.mfu;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 
+import org.springframework.lang.NonNull;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 
 public class Customer {
-
     private String name;
     private String address;
     private String email;
